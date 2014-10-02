@@ -13,10 +13,12 @@ Partial Class _Default
         Dim pt As Decimal = PTDeduct.Text
         Dim at As Decimal = ATDeduct.Text
 
+        'math logic formulas to compute salary after pretax
         Dim salary = w * h
         Dim ptsalary As Decimal
         ptsalary = salary - pt
 
+        'assume tax rate if higher/eqaual or lower than $500 after pre tax
         If ptsalary >= 500 Then
             TAX_RATE = 0.22
         End If
@@ -27,24 +29,23 @@ Partial Class _Default
         Dim atsalary As Decimal
         atsalary = ptsalary - (ptsalary * TAX_RATE)
 
+        'create net pay variable and formula
         Dim np As Decimal
         np = atsalary - at
 
+        'display result
+        lbl_Result.Text = "your Net Pay for the week is $" & np.ToString("#,###.##")
 
-        
+    End Sub
 
-        NetPay.Text = "your Net Pay for the week is $" & np.ToString("#,###.##")
+    Protected Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
 
-
-
-
-
-
-
-
-
-
-
+        'clear all textboxes and labels
+        Wage.Text = String.Empty
+        Hours.Text = String.Empty
+        PTDeduct.Text = String.Empty
+        ATDeduct.Text = String.Empty
+        lbl_Result.Text = String.Empty
 
     End Sub
 End Class

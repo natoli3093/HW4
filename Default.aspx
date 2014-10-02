@@ -29,7 +29,7 @@
         <br />
         <br />
         Net Pay:<br />
-        <asp:TextBox ID="NetPay" runat="server" Width="619px" BorderStyle="Double"></asp:TextBox>
+        <asp:Label ID="lbl_Result" runat="server"></asp:Label>
         <br />
         <br />
         <asp:Button ID="Calculate" runat="server" Text="Calculate" Font-Bold="True" Width="133px" />
