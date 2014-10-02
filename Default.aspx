@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Net Pay Calculator</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,10 +18,6 @@
         <br />
         Number of hours worked:<br />
         <asp:TextBox ID="Hours" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        Tax rate:<br />
-        <asp:TextBox ID="TaxRate" runat="server"></asp:TextBox>
         <br />
         <br />
         Pre-tax deductions:<br />
