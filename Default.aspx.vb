@@ -4,6 +4,16 @@ Partial Class _Default
 
     Protected Sub Calculate_Click(sender As Object, e As EventArgs) Handles Calculate.Click
 
+        'prompt user that a field is empty when button is clicked
+        If Wage.Text = String.Empty Or
+            Hours.Text = String.Empty Or
+            PTDeduct.Text = String.Empty Or
+            ATDeduct.Text = String.Empty Then
+            MsgBox("A field is missing. Please enter all fields", MsgBoxStyle.Exclamation, "Missing information")
+
+
+
+        End If
         'Specify constant tax rates
         Dim TAX_RATE As Decimal
 
