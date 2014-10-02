@@ -13,33 +13,33 @@
        <h1> Net Pay Calculator </h1>
         <br />
         Hourly Wage:<br />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Wage" runat="server"></asp:TextBox>
         <br />
         <br />
         Number of hours worked:<br />
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Hours" runat="server"></asp:TextBox>
         <br />
         <br />
         Tax rate:<br />
-        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TaxRate" runat="server"></asp:TextBox>
         <br />
         <br />
         Pre-tax deductions:<br />
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="PTDeduct" runat="server"></asp:TextBox>
         <br />
         <br />
         After-tax deductions:<br />
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:TextBox ID="ATDeduct" runat="server"></asp:TextBox>
         <br />
         <br />
         Net Pay:<br />
-        <asp:TextBox ID="TextBox6" runat="server" Width="619px"></asp:TextBox>
+        <asp:TextBox ID="NetPay" runat="server" Width="619px" BorderStyle="Double"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button2" runat="server" Text="Button" />
+        <asp:Button ID="Calculate" runat="server" Text="Calculate" Font-Bold="True" Width="133px" />
        <br />
        <br />
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Button ID="Clear" runat="server" Text="Clear" Font-Bold="True" Width="133px" />
     
     </div>
     </form>
