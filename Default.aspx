@@ -5,13 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Net Pay Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
-<body>
+<body id="calc">
+
     <form id="form1" runat="server">
-    <div>
+    <div id="nav" style="font-family: 'Lucida Console'">
+        
     
-       <h1> Net Pay Calculator </h1>
+       <h1 id ="class"> Net Pay Calculator </h1>
         <br />
+        
         Hourly Wage:<br />
         <asp:TextBox ID="Wage" runat="server"></asp:TextBox>
         <br />
@@ -29,15 +33,16 @@
         <br />
         <br />
         Net Pay:<br />
-        <asp:Label ID="lbl_Result" runat="server"></asp:Label>
+        <asp:Label ID="lbl_Result" runat="server" BackColor="White" BorderColor="Black" Width="220px" BorderStyle="None"></asp:Label>
         <br />
         <br />
         <asp:Button ID="Calculate" runat="server" Text="Calculate" Font-Bold="True" Width="133px" />
        <br />
        <br />
         <asp:Button ID="Clear" runat="server" Text="Clear" Font-Bold="True" Width="133px" />
-    
-    </div>
+       <br />
+       <br />
+    </div >
     </form>
 </body>
 </html>
