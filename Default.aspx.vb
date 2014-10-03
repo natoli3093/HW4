@@ -9,11 +9,9 @@ Partial Class _Default
             Hours.Text = String.Empty Or
             PTDeduct.Text = String.Empty Or
             ATDeduct.Text = String.Empty Then
-            MsgBox("A field is missing. Please enter all fields", MsgBoxStyle.Exclamation, "Missing information")
-
-
-
+            MsgBox("Please enter all fields.", MsgBoxStyle.Exclamation, "Missing information")
         End If
+
         'Specify constant tax rates
         Dim TAX_RATE As Decimal
 
@@ -51,11 +49,24 @@ Partial Class _Default
     Protected Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
 
         'clear all textboxes and labels
-        Wage.Text = String.Empty
-        Hours.Text = String.Empty
-        PTDeduct.Text = String.Empty
-        ATDeduct.Text = String.Empty
-        lbl_Result.Text = String.Empty
+        'i
+
+        If Clear.Enabled = True And
+            Wage.Text = String.Empty And
+            Hours.Text = String.Empty And
+            PTDeduct.Text = String.Empty And
+            ATDeduct.Text = String.Empty And
+            lbl_Result.Text = String.Empty Then
+            MsgBox("Nothing To Clear.", MsgBoxStyle.Information, "Missing information")
+        Else
+            Wage.Text = String.Empty
+            Hours.Text = String.Empty
+            PTDeduct.Text = String.Empty
+            ATDeduct.Text = String.Empty
+            lbl_Result.Text = String.Empty
+        End If
+
+
 
     End Sub
 End Class

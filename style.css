@@ -1,0 +1,27 @@
+#nav { background:#A4A4A4; 
+	padding:7px 12px; 
+	text-align:center;  
+	border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid; }
+
+#calc { background: #0040FF;
+	height:300px;
+	width:400px;
+	text-align:center;
+	border-radius:100px;
+	margin:auto;
+	padding:0;
+	position:center;
+	top:80px;
+	left:40%; }
+	
+#result {margin: 0; padding:0; background-color:#FFFFFF;}
+	
+#class {background: #FE2E2E;
+border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;}
+ 
